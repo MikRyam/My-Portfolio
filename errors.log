@@ -1,0 +1,204 @@
+2021-12-26 21:57:52,068 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/utils/log.py / (<class 'django.template.exceptions.TemplateDoesNotExist'>, TemplateDoesNotExist('portfolio/home.html'), <traceback object at 0x7f417ef4b1c0>) :Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/personal_portfolio_project/portfolio/views.py", line 60, in home
+    return render(request, 'portfolio/home.html', context_dict)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: portfolio/home.html
+2021-12-26 21:57:52,070 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :"GET / HTTP/1.1" 500 95524
+2021-12-26 21:58:09,326 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/utils/log.py / (<class 'django.template.exceptions.TemplateDoesNotExist'>, TemplateDoesNotExist('portfolio/home.html'), <traceback object at 0x7f417ef49bc0>) :Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/personal_portfolio_project/portfolio/views.py", line 60, in home
+    return render(request, 'portfolio/home.html', context_dict)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: portfolio/home.html
+2021-12-26 21:58:09,328 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :"GET / HTTP/1.1" 500 95166
+2021-12-27 18:44:46,264 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/utils/log.py / (<class 'TypeError'>, TypeError('"to" argument must be a list or tuple'), <traceback object at 0x7ffb49bea980>) :Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/personal_portfolio_project/portfolio/views.py", line 37, in home
+    msg = EmailMultiAlternatives(
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/mail/message.py", line 423, in __init__
+    super().__init__(
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/mail/message.py", line 203, in __init__
+    raise TypeError('"to" argument must be a list or tuple')
+TypeError: "to" argument must be a list or tuple
+2021-12-27 18:44:46,267 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :"POST / HTTP/1.1" 500 90599
+2021-12-27 18:47:43,097 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/utils/log.py / (<class 'TypeError'>, TypeError('"to" argument must be a list or tuple'), <traceback object at 0x7fdcd0ae6d00>) :Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/personal_portfolio_project/portfolio/views.py", line 37, in home
+    msg = EmailMultiAlternatives(
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/mail/message.py", line 423, in __init__
+    super().__init__(
+  File "/home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/mail/message.py", line 203, in __init__
+    raise TypeError('"to" argument must be a list or tuple')
+TypeError: "to" argument must be a list or tuple
+2021-12-27 18:47:43,099 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :"POST / HTTP/1.1" 500 90526
+2021-12-27 20:02:54,278 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:02:54,295 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:17,152 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:17,154 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:47,010 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:47,012 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:47,015 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:47,017 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:47,029 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:47,039 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:50,056 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:50,058 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:50,069 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:03:50,070 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:06,152 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:06,153 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:06,162 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:06,163 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:07,948 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:07,949 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:07,952 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:07,957 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:10,142 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:10,145 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:10,147 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:10,152 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:10,169 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:10,174 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:29,763 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:29,764 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:29,776 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:29,781 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:30,995 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:30,996 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:31,001 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:31,003 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:31,011 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:31,016 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:50,280 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:04:50,288 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:05:03,143 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:05:03,143 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:05:03,147 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:05:03,148 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:05:03,169 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:05:03,172 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:41,549 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:41,556 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:50,688 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:50,690 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:50,694 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:50,696 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:50,721 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:50,728 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:58,022 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:58,029 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:58,036 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:58,039 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:58,045 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:58,049 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,096 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,098 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,103 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,109 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,125 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,129 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,680 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,682 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,685 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,691 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,699 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
+2021-12-27 20:07:59,702 :: ERROR -- /home/mikryam/PythonProjects/Udemy/Django/Django_Full_Stack/Portfolio/venv/lib/python3.8/site-packages/django/core/servers/basehttp.py / None :You're accessing the development server over HTTPS, but it only supports HTTP.
+
