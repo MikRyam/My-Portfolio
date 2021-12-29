@@ -50,7 +50,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto " href="{% url 'home' %}">Home</a></li>
-          <li><a class="nav-link scrollto" href="http://127.0.0.1:8000/#about">About</a></li>
+          <li><a class="nav-link scrollto" href="https://mikryam.eu.pythonanywhere.com/#about">About</a></li>
           <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
           <!-- <li><a class="nav-link scrollto " href="#work">Work</a></li> -->
           <li><a class="nav-link scrollto " href="{% url 'blog:all_blogs' %}">Blog</a></li>
@@ -71,20 +71,20 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="nav-link scrollto" href="http://127.0.0.1:8000/#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="https://mikryam.eu.pythonanywhere.com/#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
-    
+
   <div class="hero hero-single route bg-image" style="background-image: url(/static/blog/img/home-bg.jpg)">
     <div class="overlay-mf">
      <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <p class="hero-subtitle">{{ blog.title }}</p>          
+          <p class="hero-subtitle">{{ blog.title }}</p>
           <p class="logo">Posted by Mikhail Ryamov on {{ blog.date|date:'F jS Y' }}</p>
           <!-- <h4>Mikhail has written {{ blogs_count }} post{{ blogs.count|pluralize }}</h4> -->
           <!-- <ol class="breadcrumb d-flex justify-content-center">
@@ -99,7 +99,7 @@
         </div>
       </div>
       </div>
-    </div>    
+    </div>
   </div>
 
   <main id="main">
@@ -111,16 +111,16 @@
               <div class="row gx-4 gx-lg-5 justify-content-center">
                   <div class="col-md-10 col-lg-8 col-xl-7">
                     {{ blog.text|safe }}
-                                         
+
                       <!-- Pager-->
-                      <br>                         
-                      <br>              
+                      <br>
+                      <br>
                       <div class="d-flex justify-content mb-4"><a class="btn btn-primary text-uppercase" href="#" onclick="history.go(-1)">&lt  Back</a></div>
                       <!-- <div class="d-flex justify-content mb-4"><a class="btn btn-primary text-uppercase" href="{% url 'blog:all_blogs' %}">←  Other Posts</a></div> -->
                       <!-- <a href="#" onclick="history.go(-1)">Go Back</a>                   -->
                     <br/></br/><br>
 
-                  </div>                   
+                  </div>
                 </div>
               </div>
           </div>
@@ -131,10 +131,10 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">    
-                      
-            <div class="more-info">  
-              <ul class="list-ico">                
+        <div class="col-sm-12">
+
+            <div class="more-info">
+              <ul class="list-ico">
                 <li><span class="bi bi-envelope"></span> mikhailryamov@gmail.com</li>
               </ul>
             </div>
@@ -149,8 +149,8 @@
                 <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
               </ul>
             </div>
-          </div>      
- 
+          </div>
+
 
           <!-- <div class="copyright-box">
             <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>

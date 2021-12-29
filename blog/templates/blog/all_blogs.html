@@ -23,7 +23,7 @@
   <link href="{% static 'portfolio/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
   <link href="{% static 'portfolio/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
   <link href="{% static 'portfolio/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-  
+
 
   <!-- Template Main CSS File -->
   <link href="{% static 'portfolio/css/style.css' %}" rel="stylesheet">
@@ -50,12 +50,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto " href="{% url 'home' %}">Home</a></li>
-          <li><a class="nav-link scrollto" href="http://127.0.0.1:8000/#about">About</a></li>
+          <li><a class="nav-link scrollto" href="https://mikryam.eu.pythonanywhere.com/#about">About</a></li>
           <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
           <!-- <li><a class="nav-link scrollto " href="#work">Work</a></li> -->
           <li><a class="nav-link scrollto " href="{% url 'blog:all_blogs' %}">Blog</a></li>
-          
-          <li><a class="nav-link scrollto" href="http://127.0.0.1:8000/#contact">Contact</a></li>
+
+          <li><a class="nav-link scrollto" href="https://mikryam.eu.pythonanywhere.com/#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -63,14 +63,14 @@
     </div>
   </header><!-- End Header -->
   {% endcache %}
-  
+
   {% cache 100 hero %}
   <div class="hero hero-single route bg-image" style="background-image: url(/static/blog/img/home-bg.jpg)">
     <div class="overlay-mf">
      <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">Blog</h2>          
+          <h2 class="hero-title mb-4">Blog</h2>
           <p class="hero-subtitle">Mikhail has written {{ blogs_count }} post{{ blogs.count|pluralize }}</p>
           <!-- <h4>Mikhail has written {{ blogs_count }} post{{ blogs.count|pluralize }}</h4> -->
           <!-- <ol class="breadcrumb d-flex justify-content-center">
@@ -85,11 +85,11 @@
         </div>
       </div>
       </div>
-    </div>    
+    </div>
   </div>
   {% endcache %}
 
-  
+
   <main id="main">
             <!-- Main Content-->
             <br>
@@ -114,14 +114,14 @@
                       <hr class="my-4" />
                     {% endfor %}
 
-                     
+
                       <!-- Pager-->
                       <!-- <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div> -->
-                  
-                  <!-- Pagination--> 
+
+                  <!-- Pagination-->
                   <br/></br/>
-                  
-                  <div class="d-flex justify-content-center mb-4">                  
+
+                  <div class="d-flex justify-content-center mb-4">
                     <nav aria-label="Page navigation example">
                       <ul class="pagination">
                         <!-- Если доступна предыдущая страница, то даём ссылку на неё и самую первую страницу -->
@@ -133,8 +133,8 @@
                         <!-- Показываем только текущую страницу и ближайшие к ней, чтобы список не тянулся и не захламлял страницу -->
                         {% for num in blogs_list.paginator.page_range %}
                         {% if blogs_list.number == num %}
-                            <li class="page-item active"><a class="page-link" href="#">{{ num }}</a></li>                            
-                        {% elif num > blogs_list.number|add:'-3' and num < blogs_list.number|add:'3' %}                            
+                            <li class="page-item active"><a class="page-link" href="#">{{ num }}</a></li>
+                        {% elif num > blogs_list.number|add:'-3' and num < blogs_list.number|add:'3' %}
                             <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
                         {% endif %}
                         {% endfor %}
@@ -146,24 +146,24 @@
                         {% endif %}
                       </ul>
                     </nav>
-                    
-                  </div>                   
+
+                  </div>
                 </div>
               </div>
           </div>
 
   </main><!-- End #main -->
-  
+
 
   {% cache 100 footer %}
   <!-- ======= Footer ======= -->
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">    
-                      
-            <div class="more-info">  
-              <ul class="list-ico">                
+        <div class="col-sm-12">
+
+            <div class="more-info">
+              <ul class="list-ico">
                 <li><span class="bi bi-envelope"></span> mikhailryamov@gmail.com</li>
               </ul>
             </div>
@@ -178,8 +178,8 @@
                 <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
               </ul>
             </div>
-          </div>      
- 
+          </div>
+
 
           <!-- <div class="copyright-box">
             <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
@@ -208,7 +208,7 @@
   <script src="{% static 'portfolio/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'portfolio/vendor/glightbox/js/glightbox.min.js' %}"></script>
   <script src="{% static 'portfolio/vendor/swiper/swiper-bundle.min.js' %}"></script>
-  
+
 
   <!-- Template Main JS File -->
   <script src="{% static 'portfolio/js/main.js' %}"></script>
